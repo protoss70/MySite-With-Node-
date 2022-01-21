@@ -1,0 +1,151 @@
+body {
+  padding: 0 8%;
+  margin: 0;
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+select {
+  margin-right: 5px;
+  margin-left: 3px
+}
+
+
+
+.top-nav {
+  display: inline-block;
+  width: 100%;
+  padding: 3px 0;
+  padding-bottom: 5px;
+}
+
+.top-nav_form {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.SearchBar {
+  width: 50%;
+  border-radius: 9999px;
+  border: solid #D8D8D8;
+  border-width: 2px;
+  padding-left: 10px;
+}
+
+.container-dropdowns {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav_input-container {
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+}
+
+.logo {
+  width: 30px;
+}
+
+.input-group {
+  width: 30%;
+}
+
+.input-group-prepend {
+  width: 50%;
+}
+
+.input-group-text {
+  margin-right: 1px;
+  font-size: 15px;
+}
+
+.custom-select {
+  width: 40%;
+}
+
+.person {
+  width: 50px;
+  margin-right: 5px;
+  padding: 1px;
+}
+
+.Hamburger-inputs {
+  display: none;
+  width: 45%;
+}
+
+.ham-btn {
+  margin-right: 5px;
+  width: 50%;
+}
+
+.ham-filters {
+  position: absolute;
+  width: 50%;
+  left: 42%;
+  justify-content: center;
+  display: none;
+}
+
+.ham-content {
+  width: 100%;
+  justify-content: center;
+}
+
+.ham-texts {
+  width: 50%;
+}
+
+.person:hover{
+  background-color: #D8D8D8;
+  cursor: pointer;
+  border-radius: 9999px;
+}
+
+@media (max-width: 1300px) {
+  body {
+    font-size: 20px;
+    padding: 0 5%;
+  }
+
+  input {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  .container-dropdowns {
+    display: none;
+  }
+
+  .Hamburger-inputs {
+    display: flex;
+  }
+
+  .ham-filters{
+    left: 53%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ham-filters{
+    left: 42%;
+  }
+}
+
+.visible {
+  display: flex;
+}
+
+.none {
+  display: none;
+}

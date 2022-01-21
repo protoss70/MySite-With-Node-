@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Site</title>
+
+  <!-- css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="/Styles/navbar.css">
+  <link rel="stylesheet" href="/Styles/content.css">
+</head>
+
+<body>
+  <div class="row content-row">
+
+    <div class="sideNav col col-lg-2 col-md-2">
+      <div class="sideNav_content">
+        <div class="sideNav_ItemContainer">
+          <div class="sideNav_ItemContainerContainer">
+            <span class="logo">LOGO</span>
+            <div class="first-navItem sideNav-Item">
+              <img class="sideNavItem-icon" src="/img/communities-active.png" alt="Icon">
+              <span style="padding-left: 10px;">Community</span>
+            </div>
+            <div class="sideNav-Item">
+              <img class="sideNavItem-icon" src="/img/messages.png" alt="Icon">
+              <span style="padding-left: 10px;">Messages</span>
+            </div>
+            <div class="sideNav-Item">
+              <img class="sideNavItem-icon" src="/img/mycontent.png" alt="Icon">
+              <span style="padding-left: 10px;">My Content</span>
+            </div>
+            <div class="sideNav-Item">
+              <img class="sideNavItem-icon" src="/img/heart.png" alt="Icon">
+              <span style="padding-left: 10px;">Favorites</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Middle col col-lg-9 col-md-9 col-sm-10">
+
+      <div class="top-nav">
+        <form class="top-nav_form" autocomplete="off" method="get">
+
+          <div class="nav_input-container">
+
+            <input class="SearchBar" type="text" name="Search" placeholder="Search">
+            <div class="Hamburger-inputs">
+              <input class="btn btn-dark ham-btn open-ham" id="open-ham" type="button" value="Filters">
+              <input class="btn btn-dark ham-btn" type="submit" value="Search">
+            </div>
+
+            <div class="container-dropdowns">
+
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="Type">Type</label>
+                </div>
+                <select class="custom-select" id="Type">
+                  <option selected>All</option>
+                  <option value="1">Projects</option>
+                  <option value="2">Events</option>
+                  <option value="3">Clubs</option>
+                </select>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <label style="padding-right: 15px;" class="input-group-text" for="Faculty">Faculty</label>
+                </div>
+                <select class="custom-select" id="Faculty">
+                  <option selected>All</option>
+                  <option value="1">Fel</option>
+                  <option value="2">Fit</option>
+                </select>
+              </div>
+
+              <input class="btn btn-dark" type="submit" value="Search">
+
+            </div>
+
+          </div>
+          <img class="person" src="/img/icon-person.png" alt="Person">
+        </form>
+      </div>
+
+      <div class="ham-filters">
+        <div class="ham-content" id>
+
+          <div class="ham-texts input-group">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="Type">Type</label>
+            </div>
+            <select class="custom-select" id="Type">
+              <option selected>All</option>
+              <option value="1">Projects</option>
+              <option value="2">Events</option>
+              <option value="3">Clubs</option>
+            </select>
+          </div>
+
+          <div class="ham-texts input-group">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="Faculty">Faculty</label>
+            </div>
+            <select class="custom-select" id="Faculty">
+              <option selected>All</option>
+              <option value="1">Fel</option>
+              <option value="2">Fit</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="MainContainer">
+        <div class="Items-FloorContainer">
+
+          <div class="Content_Main-Item Event">
+            <span style="flex-basis: 9%;">Event</span>
+            <div class="Item-Media">
+              <img class="Item_Image" src="/img/ChessTournament.jpg">
+              <div class="Item_Text">
+                <span class="Item_Text-Title">Chess Tournament</span>
+                <div class="Item_Text-Requirements">
+                  <span><b>Owner:</b> Mathew Barner</span>
+                  <span><b>Faculty:</b> Fel</span>
+                  <span><b>Status:</b> Looking For People</span>
+                </div>
+              </div>
+            </div>
+            <div class="Item-Description">
+              This is a friendly semi-professional Tournament,
+              winner will be awarded with 1000czk.
+              Hope everyone has lots of fun!
+            </div>
+            <div class="Item_Reach">
+              <img class="Item_Reach-Icon"src="/img/heart.png">
+              <img class="Item_Reach-Icon"src="/img/PaperPlane.png">
+            </div>
+          </div>
+
+          <div class="Content_Main-Item Project">
+            <span style="flex-basis: 9%;">Project</span>
+            <div class="Item-Media">
+              <img class="Item_Image" src="/img/CodingProject.jpg">
+              <div class="Item_Text">
+                <span class="Item_Text-Title">Python AI For Automation</span>
+                <div class="Item_Text-Requirements">
+                  <span><b>Owner:</b> Sam Vodnik</span>
+                  <span><b>Faculty:</b> Fit</span>
+                  <span><b>Language:</b> Python</span>
+                </div>
+              </div>
+            </div>
+            <div class="Item-Description">
+              We are developing AI for car headlight automation.
+              Team of 3 looking for SQL developer, and data miner.
+            </div>
+            <div class="Item_Reach">
+              <img class="Item_Reach-Icon"src="/img/heart.png">
+              <img class="Item_Reach-Icon"src="/img/PaperPlane.png">
+            </div>
+          </div>
+
+          <div class="Content_Main-Item Club">
+            <span style="flex-basis: 9%;">Club</span>
+            <div class="Item-Media">
+              <img class="Item_Image" src="/img/f1Club.jpg">
+              <div class="Item_Text">
+                <span class="Item_Text-Title">F1 Club</span>
+                <div class="Item_Text-Requirements">
+                  <span><b>Owner:</b> Cvut Fel</span>
+                  <span><b>Faculty:</b> Fel</span>
+                </div>
+              </div>
+            </div>
+            <div class="Item-Description">
+              We are the F1 team of CVUT FEL. We make great f1
+              cars and join international races! We need all sorts of
+              people to work with us. Come and change you University life!
+            </div>
+            <div class="Item_Reach">
+              <img class="Item_Reach-Icon"src="/img/heart.png">
+              <img class="Item_Reach-Icon"src="/img/PaperPlane.png">
+            </div>
+          </div>
+
+          <div class="Content_Main-Item Event">
+            <span style="flex-basis: 9%;">Event</span>
+            <div class="Item-Media">
+              <img class="Item_Image" src="/img/ChessTournament.jpg">
+              <div class="Item_Text">
+                <span class="Item_Text-Title">Chess Tournament</span>
+                <div class="Item_Text-Requirements">
+                  <span><b>Owner:</b> Mathew Barner</span>
+                  <span><b>Faculty:</b> Fel</span>
+                  <span><b>Status:</b> Looking For People</span>
+                </div>
+              </div>
+            </div>
+            <div class="Item-Description">
+              This is a friendly semi-professional Tournament,
+              winner will be awarded with 1000czk.
+              Hope everyone has lots of fun!
+            </div>
+            <div class="Item_Reach">
+              <img class="Item_Reach-Icon"src="/img/heart.png">
+              <img class="Item_Reach-Icon"src="/img/PaperPlane.png">
+            </div>
+          </div>
+
+          <div class="Content_Main-Item Project">
+            <span style="flex-basis: 9%;">Event</span>
+            <div class="Item-Media">
+              <img class="Item_Image" src="/img/CodingProject.jpg">
+              <div class="Item_Text">
+                <span class="Item_Text-Title">Chess Tournament</span>
+                <div class="Item_Text-Requirements">
+                  <span><b>Owner:</b> Mathew Barner</span>
+                  <span><b>Faculty:</b> Fel</span>
+                  <span><b>Status:</b> Looking For People</span>
+                </div>
+              </div>
+            </div>
+            <div class="Item-Description">
+              This is a friendly semi-professional Tournament,
+              winner will be awarded with 1000czk.
+              Hope everyone has lots of fun!
+            </div>
+            <div class="Item_Reach">
+              <img class="Item_Reach-Icon"src="/img/heart.png">
+              <img class="Item_Reach-Icon"src="/img/PaperPlane.png">
+            </div>
+          </div>
+
+          <div class="Content_Main-Item Event">
+            <span style="flex-basis: 9%;">Event</span>
+            <div class="Item-Media">
+              <img class="Item_Image" src="/img/ChessTournament.jpg">
+              <div class="Item_Text">
+                <span class="Item_Text-Title">Chess Tournament</span>
+                <div class="Item_Text-Requirements">
+                  <span><b>Owner:</b> Mathew Barner</span>
+                  <span><b>Faculty:</b> Fel</span>
+                  <span><b>Status:</b> Looking For People</span>
+                </div>
+              </div>
+            </div>
+            <div class="Item-Description">
+              This is a friendly semi-professional Tournament,
+              winner will be awarded with 1000czk.
+              Hope everyone has lots of fun!
+            </div>
+            <div class="Item_Reach">
+              <img class="Item_Reach-Icon"src="/img/heart.png">
+              <img class="Item_Reach-Icon"src="/img/PaperPlane.png">
+            </div>
+          </div>
+
+          <div class="Content_Main-Item Project">
+            <span style="flex-basis: 9%;">Event</span>
+            <div class="Item-Media">
+              <img class="Item_Image" src="/img/CodingProject.jpg">
+              <div class="Item_Text">
+                <span class="Item_Text-Title">Chess Tournament</span>
+                <div class="Item_Text-Requirements">
+                  <span><b>Owner:</b> Mathew Barner</span>
+                  <span><b>Faculty:</b> Fel</span>
+                  <span><b>Status:</b> Looking For People</span>
+                </div>
+              </div>
+            </div>
+            <div class="Item-Description">
+              This is a friendly semi-professional Tournament,
+              winner will be awarded with 1000czk.
+              Hope everyone has lots of fun!
+            </div>
+            <div class="Item_Reach">
+              <img class="Item_Reach-Icon"src="/img/heart.png">
+              <img class="Item_Reach-Icon"src="/img/PaperPlane.png">
+            </div>
+          </div>
+
+          <div class="Content_Main-Item Project">
+            <span style="flex-basis: 9%;">Event</span>
+            <div class="Item-Media">
+              <img class="Item_Image" src="/img/CodingProject.jpg">
+              <div class="Item_Text">
+                <span class="Item_Text-Title">Chess Tournament</span>
+                <div class="Item_Text-Requirements">
+                  <span><b>Owner:</b> Mathew Barner</span>
+                  <span><b>Faculty:</b> Fel</span>
+                  <span><b>Status:</b> Looking For People</span>
+                </div>
+              </div>
+            </div>
+            <div class="Item-Description">
+              This is a friendly semi-professional Tournament,
+              winner will be awarded with 1000czk.
+              Hope everyone has lots of fun!
+            </div>
+            <div class="Item_Reach">
+              <img class="Item_Reach-Icon"src="/img/heart.png">
+              <img class="Item_Reach-Icon"src="/img/PaperPlane.png">
+            </div>
+          </div>
+
+          <div class="Content_Main-Item Club">
+            <span style="flex-basis: 9%;">Event</span>
+            <div class="Item-Media">
+              <img class="Item_Image" src="/img/f1Club.jpg">
+              <div class="Item_Text">
+                <span class="Item_Text-Title">Chess Tournament</span>
+                <div class="Item_Text-Requirements">
+                  <span><b>Owner:</b> Mathew Barner</span>
+                  <span><b>Faculty:</b> Fel</span>
+                  <span><b>Status:</b> Looking For People</span>
+                </div>
+              </div>
+            </div>
+            <div class="Item-Description">
+              This is a friendly semi-professional Tournament,
+              winner will be awarded with 1000czk.
+              Hope everyone has lots of fun!
+            </div>
+            <div class="Item_Reach">
+              <img class="Item_Reach-Icon"src="/img/heart.png">
+              <img class="Item_Reach-Icon"src="/img/PaperPlane.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="Mobile-Footer">
+      <img class="footer-icon" src="/img/communities-active.png" alt="">
+      <img class="footer-icon" src="/img/messages.png" alt="">
+      <img class="footer-icon" src="/img/mycontent.png" alt="">
+      <img class="footer-icon" src="/img/heart.png" alt="">
+    </div>
+
+    <div class="Mobile-Ghost">
+
+    </div>
+
+  </div>
+
+  <div class="Mobile-Footer">
+    <img class="footer-icon" src="/img/communities-active.png" alt="">
+    <img class="footer-icon" src="/img/messages.png" alt="">
+    <img class="footer-icon" src="/img/mycontent.png" alt="">
+    <img class="footer-icon" src="/img/heart.png" alt="">
+  </div>
+
+  <div class="Mobile-Ghost">
+
+  </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/index.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</html>
